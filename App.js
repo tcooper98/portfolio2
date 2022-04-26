@@ -9,6 +9,7 @@ import Viewp from './components/viewProducts';
 function Main({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal:'12', paddingVertical:'15' }}>
+      <h1>Artisan Market Place</h1>
       <Button
         style={styles.button}
         title="Home"
@@ -16,7 +17,7 @@ function Main({ navigation }) {
       />
       <Button
         title="Sell"
-        onPress={() => navigation.navigate('Add')}
+        onPress={() => navigation.navigate('Sell Items')}
       />
     </View>
   );
@@ -31,7 +32,7 @@ function MyStack() {
     <Stack.Navigator>
       <Stack.Screen name="Main" component={Main} />
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Add" component={Add} />
+      <Stack.Screen name="Sell Items" component={Add} />
       <Stack.Screen name="View" component={Viewp} />
     </Stack.Navigator>
   );

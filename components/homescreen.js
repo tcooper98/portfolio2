@@ -4,7 +4,7 @@ import { Format } from "./productFormat";
 import { Page } from "./productPage";
 import Items from "./products";
 
-function Home({ navigation }) {
+function Home() {
   const[isViewing, pageView] = useState(false);
   const [product, setProduct] = useState({});
   function event(){

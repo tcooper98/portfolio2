@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { Page } from "./productPage";
 
 
-function Viewp({ navigation }) {
+function Viewp() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
        {Items.map(({id, image, name, price, description }) =>(

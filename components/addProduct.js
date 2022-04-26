@@ -1,12 +1,36 @@
 import React,{Component} from "react";
-import { View } from "react-native";
+import { StyleSheet, Text, View, TextInput, Button} from 'react-native';
+import { color } from "react-native-elements/dist/helpers";
 
-function Add({ navigation }) {
+
+function Add() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <h1>Sell</h1>
+      <View style={ styles.container}>
+        <TextInput style={styles.input} placeholder="Name of Item"/>
+        <TextInput style={styles.input} placeholder="Price"/>
+        <TextInput style={styles.input} placeholder="Description"/>
+        <TextInput style={styles.input} placeholder="Image URL"/>
+        <Button
+          title="Submit"
+        />
+    
       </View>
     );
   }
+
+  const styles = StyleSheet.create({
+    container: {
+        padding: 20
+        
+      },
+      input: {
+        marginTop: 10,
+        marginBottom: 10,
+        
+        
+        
+        },
+    })
+
 export default Add;
 
